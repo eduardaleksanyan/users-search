@@ -13,7 +13,11 @@ export default function Users() {
         setText(enteredName);
     };
 
-    const fetchUsers = async (page: number) => {
+    const fetchUsers = async () => {
+        if (text.length <= 1) {
+            return;
+        }
+
         setLoading(true);
         const response = await UserApi.getUsers(text);
         setUsers(response.data);
@@ -29,7 +33,7 @@ export default function Users() {
                     placeholder="Search Users"
                     className="input"
                 />
-                <button onClick={async () => {await fetchUsers(0) }}>Search</button>
+                <button onClick={async () => {await fetchUsers() }}>Search</button>
             </div>
             {
                 users?.data &&

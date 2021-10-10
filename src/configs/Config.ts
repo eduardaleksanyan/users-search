@@ -10,7 +10,7 @@ export class Config implements ConfigLiteral {
     private app: IAppConfig = {
         env: env("NODE_ENV", "local"),
         isLocal: process.env.NODE_ENV === ENVIRONMENTS.local,
-        port: toInt(env("APP_PORT", "3000")),
+        port: toInt(env("APP_PORT", "5000")),
     };
 
     private pingInterval: number = toInt(env("DB_PING_INTERVAL", "5000"));

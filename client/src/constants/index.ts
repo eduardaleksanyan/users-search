@@ -1,0 +1,1 @@
+export const PAGE_COUNT: number = 5;

@@ -16,7 +16,7 @@ ADD UNIQUE KEY `users_email_uindex` (`email`);
 ALTER TABLE `users` ADD FULLTEXT KEY `first_name_last_name_full_text` (`first_name`,`last_name`);
 
 ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=896;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 ```
 

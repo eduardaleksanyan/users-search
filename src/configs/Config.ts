@@ -5,7 +5,6 @@ import { env, toBool, toInt } from "../helpers/helper";
 import { ENVIRONMENTS } from "../constants";
 import { RoutingControllersOptions } from "routing-controllers";
 
-
 @Service({ global: true })
 export class Config implements ConfigLiteral {
     private app: IAppConfig = {

@@ -1,5 +1,4 @@
 import "reflect-metadata";
-
 import { Container, Inject, Service } from "typedi";
 import { HttpService } from "./services/HttpService";
 import { Config } from "./configs/Config";
